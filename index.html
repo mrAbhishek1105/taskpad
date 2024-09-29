@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>TaskPad</title>
+</head>
+<body>
+    <div class="hero">
+        <h1>TaskPad</h1>
+        <span></span>
+        <p>Keep Track, Stay on Track</p>
+        <div class="navbar">
+            <a class="btn" href="#todos">TODOs</a>
+            <a class="btn" href="#notes">NOTEs</a>
+        </div>
+    </div>
+    <section class="content" id="todos">
+        <h2>TODOs</h2>
+        <span></span>
+        <div class="addTodo">
+            <input id="InputTask" type="text" placeholder="Add a new task">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div class="myTodos">
+            <h1>MyTODOs</h1>
+            <ul id="TaskList">
+
+                <li><p> my Name is Abhishek</p>
+                    <div class="todobtn">
+                        <button id="complete"><span class="material-symbols-outlined">check</span></button>
+                        <button onclick="deleteTodo()" id="del"><span class="material-symbols-outlined">delete</span></button>
+                    </div>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </section>
+
+    <section class="content" id="notes">
+        <h2>NOTEs</h2>
+        <span></span>
+
+
+        <h1>I'm Working on this Section, Wait for sometime.</h1>
+
+    </section>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
